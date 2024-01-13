@@ -1,0 +1,78 @@
+.user-profile-container {
+  position: relative;
+
+  .image-banner {
+    height: 400px;
+    background: url("/assets/img/bg-auth.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      text-align: center;
+      font-size: 70px;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 2px 6px 18px 0 #1a1f4529;
+    }
+  }
+
+  .user-profile-content {
+    .user-profile-banner {
+      margin: -80px auto 0;
+      width: 60%;
+      height: 150px;
+      background-color: #fff;
+      padding: 20px 20px;
+      box-shadow: 2px 6px 18px 0 #1a1f4529;
+      border-radius: 24px;
+      z-index: 2;
+      position: relative;
+      .user-profile-data {
+        display: flex;
+        gap: 12px;
+
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: contain;
+        }
+        .user-profile-info {
+          margin-top: 20px;
+
+          h1 {
+            font-size: 26px;
+            font-weight: bold;
+          }
+          p {
+            color: #7c8095;
+            font-size: 14px;
+            letter-spacing: 0.262px;
+          }
+        }
+      }
+      .user-profile-specialist {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #19b962;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #FFF;
+      }
+    }
+  }
+}

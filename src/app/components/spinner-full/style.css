@@ -1,0 +1,14 @@
+.centered-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .spinner-wrapper {
+    text-align: center;
+  }
+  
+  .img-card {
+    /* Add any additional styles for your image here */
+  }

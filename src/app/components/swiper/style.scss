@@ -1,0 +1,94 @@
+.top-nav {
+    position: relative;
+
+    .header-img {
+        position: absolute;
+        left: 10%;
+        top: 0;
+        display: block;
+        z-index: 10;
+        background-color: #fff;
+        padding: 0 20px 10px;
+
+
+        h2 {
+            color: rgb(2, 33, 105);
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: -5px;
+            color: rgb(230, 60, 47);;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.swiper-content-main {
+  height: 100vh;
+
+  .swiper-content {
+    position: relative;
+    display: inline-block;
+  
+    .img-swiper {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    .overlay {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .text-container {
+        margin-top: 20px; // Adjust the margin as needed
+        max-width: 1000px;
+        h1 {
+            font-size: 70px;
+            color: #FFF;
+            font-weight: 900;
+            line-height: 70px;
+        }
+        a {
+            border: 2px solid #fff;
+            padding: 14px 46px;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 50px;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    // top: 20%;
+    bottom: 20%;
+
+    .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+    }
+  }
+}

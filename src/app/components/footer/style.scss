@@ -1,0 +1,50 @@
+.footer {
+  padding: 64px 0;
+  background: #252543;
+  margin-top: 100px;
+
+  .footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    a {
+      font-size: 16px;
+      color: #8894a4;
+    }
+  }
+  .footer-icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    p {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 50%;
+      background-color: #30304d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+
+  .footer-copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #8894a4;
+    }
+  }
+}

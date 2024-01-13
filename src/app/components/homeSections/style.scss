@@ -1,0 +1,113 @@
+
+.homeSections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 80px;
+    .homeSectionsleft {
+        width: 45%;
+        margin-left: 200px;
+
+        h1 {
+            color: #e53c2e;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 24px;
+            max-width: 500px;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        a {
+            border : 1px solid #000;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .homeSectionsright {
+        width: 65%;
+    }
+}
+
+.homeSections2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 100px;
+    .homeSectionsright2 {
+        width: 50%;
+        
+    }
+    .homeSectionsleft2 {
+        width: 50%;
+        padding-left: 200px;
+
+        h1 {
+            color: #e53c2e;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 24px;
+            max-width: 500px;
+            color: #000;
+            margin-bottom: 8px;
+        }
+
+        a {
+            border : 1px solid #000;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.ready-now {
+    // max-width: 1500px;
+    margin: 120px auto 0;
+    background-color: #012168;
+    padding: 80px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        color: #FFF;
+    }
+
+    a {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        color: #fff;
+        font-weight: bold;
+        font-size: 22px;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            border-color: #012168;
+            background-color: #fff;
+            color: #012168;
+            
+        }
+    }
+
+}

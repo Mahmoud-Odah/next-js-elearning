@@ -1,0 +1,32 @@
+.our-values { 
+    margin-top:40px ;
+    padding: 20px ;
+
+    .our-values-title {
+        height: 100px;
+        width: 100%;
+        background-color: #eeeef084;
+        ;border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 { 
+            color: #1d2769;
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+
+    .our-values-items { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        .our-values-item {
+            width: calc(33% - 12px);
+        }
+    }
+}
