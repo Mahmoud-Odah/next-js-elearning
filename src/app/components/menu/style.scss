@@ -37,3 +37,30 @@
     }
   }
 }
+
+.learning-ment { 
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.light-toggle {
+  text-align: center;
+
+  .text {
+    font-size: 15px;
+    color: #333; // Default text color
+    animation: lightToggle 1s infinite alternate; // CSS animation
+    margin-top: 4px;
+
+  }
+
+  @keyframes lightToggle {
+    0% {
+      color: #fff; // Light off
+    }
+
+    100% {
+      color: #e53c2e; // Light on
+    }
+  }
+}

@@ -1,13 +1,21 @@
 'use client'
-import React from "react";
-// import logo from "../../assets/imgs/logonew.png";
+import React, { useEffect } from "react";
 import { ColorRing } from "react-loader-spinner";
 import './style.css'
-const Spinner = () => {
+const SpinnerFull = () => {
+
+  useEffect(() => {
+    
+  
+    return () => {
+      window.scrollTo(0, 0);
+    }
+  }, [])
+  
   return (
-    <div className="centered-wrapper">
-    <div className="spinner-wrapper">
-      {/* <img src={logo} alt="Sewara logo" className="img-card" /> */}
+    <div className="centered-wrapper-full">
+    <div className="spinner-wrapper-full">
+      <img src={'/assets/img/loadpng.png'} alt="Sewara logo" className="img-card-full" />
       <ColorRing
         visible={true}
         height="110"
@@ -15,11 +23,11 @@ const Spinner = () => {
         ariaLabel="blocks-loading"
         wrapperStyle={{}}
         wrapperClass="blocks-wrapper"
-        colors={["#DB016A", "#B104A0", "#7008F1", "#AB04A7", "#9606C2"]}
+        colors={["#e53c2e", "#B104A0", "#7008F1", "#AB04A7", "#9606C2"]}
       />
     </div>
     </div>
   );
 };
 
-export default Spinner;
+export default SpinnerFull;

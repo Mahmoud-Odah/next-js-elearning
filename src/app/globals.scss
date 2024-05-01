@@ -121,4 +121,10 @@ body {
 }
 
 
- 
+ .nextjs-toast-errors-parent {
+  display: none !important;
+ }
+
+ .ReactModal__Overlay {
+  z-index: 100;
+ }

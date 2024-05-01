@@ -3,15 +3,22 @@ import "./style.scss";
 import Link from "next/link";
 import Image from "next/image";
 const MyCourses = ({ data = [], isHome }) => {
-  
   return (
     <div className="courses-container container m-auto max-w-screen-xl">
-      <h1 className="courses-container-title">
-        {"My Courses"}
-      </h1>
+      <h1 className="courses-container-title">{"My Courses"}</h1>
+
+      {data.length === 0 && (
+        <div className="no-courses-profile">
+          <Link href={"/e-learning"}>Subscribe now with new courses</Link>
+        </div>
+      )}
       <div className="courses-boxs">
         {data.map((el, index) => (
-          <Link href={`/e-learning/courses/${el.id}`} className="courses-box" key={index}>
+          <Link
+            href={`/e-learning/courses/${el.id}`}
+            className="courses-box"
+            key={index}
+          >
             <div className="course-img">
               <img
                 src={`http://127.0.0.1:1338${el?.image}`}

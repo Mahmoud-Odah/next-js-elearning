@@ -73,3 +73,23 @@
     }
   }
 }
+
+
+.no-courses-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #000;
+  padding: 20px;
+  &:hover {
+    border-color: #e53c2e;
+
+    a {
+      color: #e53c2e;
+    }
+  }
+  a {
+    font-size: 20px;
+
+  }
+}

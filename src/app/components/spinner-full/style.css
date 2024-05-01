@@ -1,14 +1,14 @@
-.centered-wrapper {
+.centered-wrapper-full {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
   }
   
-  .spinner-wrapper {
+  .spinner-wrapper-full {
     text-align: center;
   }
   
-  .img-card {
+  .img-card-full {
     /* Add any additional styles for your image here */
   }

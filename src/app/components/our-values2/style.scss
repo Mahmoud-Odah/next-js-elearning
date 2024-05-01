@@ -1,0 +1,59 @@
+.our-values2 {
+  // margin-top: 40px;
+  padding: 20px;
+
+  .our-values2-title {
+    height: 100px;
+    width: 100%;
+    // background-color: #eeeef084;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+
+    h1 {
+      color: #1d2769;
+      font-size: 40px;
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+
+  .our-values2-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    // margin-top: 50px;
+
+    .our-values2-item {
+      box-shadow: rgba(26, 31, 69, 0.2) 0px 1px 6px 0px;
+      color: rgb(26, 31, 69);
+      height: 100%;
+      padding: 30px 15px;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      border-radius: 12px;
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        // margin-top: 24px;
+      }
+      p {
+        padding: 0 20px;
+        line-height: 1.6;
+        font-size: 15px;
+        font-weight: 500;
+        color: #8894a4;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}

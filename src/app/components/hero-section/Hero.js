@@ -15,6 +15,7 @@ const Hero = () => {
       </div>
       <div className="hero-container-left">
         <Image src={"/assets/img/1233.png"} alt="hero-img" width={400} height={400} />        
+        {/* <Image src={"/assets/img/4724136.png"} alt="hero-img" width={400} height={400} />         */}
       </div>
     </div>
   );

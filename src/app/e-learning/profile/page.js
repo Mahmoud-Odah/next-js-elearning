@@ -8,19 +8,32 @@ const Profile = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  function getRandomObjects(array, count) {
-    const shuffledArray = array.sort(() => Math.random() - 0.5);
-    return shuffledArray.slice(0, count);
+  function getCoursesByIds(courseIds, allCourses) {
+    const matchingCourses = [];
+      console.log('courseIds', courseIds)
+      console.log('allCourses', allCourses)
+    courseIds.forEach(courseId => {
+      const course = allCourses.find(course => course.id == courseId);
+      if (course) {
+        matchingCourses.push(course);
+      }
+    });
+  
+    return matchingCourses;
   }
 
   const getData = async () => {
+    const user = await axios.get(
+      `http://127.0.0.1:3005/api/users/${userData.user_id}`
+    );
+    const dataUser = user.data
     const popularPlayList = await axios.get(
       "http://127.0.0.1:1338/api/play-lists?populate[0]=image"
     );
     const popularPlayListData = popularPlayList?.data;
-    console.log("popularPlayListData :>> ", popularPlayListData);
     setLoading(false);
-    const randomObjects = getRandomObjects(popularPlayListData, 4);
+    let coursesData = dataUser.courses
+    const randomObjects = getCoursesByIds(coursesData, popularPlayListData);
     setData(randomObjects);
   };
   useEffect(() => {
@@ -42,17 +55,17 @@ const Profile = () => {
         <div className="user-profile-banner">
           <div className="user-profile-data">
             <img
-              src={`data:image/png;base64,${userData.personalPhoto}`}
+              src={`data:image/png;base64,${userData?.personalPhoto}`}
               alt="user-image"
             />
             <div className="user-profile-info">
               <h1>
-                {userData.firstName} {userData.lastName}
+                {userData?.firstName} {userData?.lastName}
               </h1>
-              <p>{userData.email}</p>
+              <p>{userData?.email}</p>
             </div>
           </div>
-          <div className="user-profile-specialist">{userData.specialist}</div>
+          <div className="user-profile-specialist">{userData?.specialist}</div>
         </div>
       </div>
       <MyCourses data={data}/>

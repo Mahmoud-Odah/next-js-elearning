@@ -1,0 +1,82 @@
+.banner-home2 {
+  margin-top: 120px;
+
+.banner-container2 {
+  height: 450px;
+  background: url("/assets/img/pexels-jeshootscom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position-y: -600px;
+  // background-position-x: -150px;
+  position: relative;
+  .overlay-img {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 100%;
+    // background: rgba(0, 0, 0, 0.4); /* Adjust the opacity and color as needed */
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // color: #fff; /* Text color on the overlay */
+    // text-align: center;
+  }
+
+  .banner-content2 {
+    z-index: 5;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 1180px;
+    h1 {
+      font-size: 38px;
+      line-height: 38px;
+      font-weight: bold;
+      color: #e53c2e;
+    }
+    p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 22.4px;
+      max-width: 500px;
+      color: #000;
+      text-align: left;
+    }
+    a {
+      padding: 10px 38px;
+      font-size: 18px;
+      border: 1px solid #19b962;
+      background-color: #19b962;
+      color: white;
+      border-radius: 24px;
+      width: 150px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}}
+// .banner-container2 {
+//     height: 450px;
+//     background: url('/assets/img/pexels-jeshootscom.jpg');
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     background-position-y: -600px;
+
+//     .banner-content2 {
+
+//     }
+// }
